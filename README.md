@@ -360,10 +360,11 @@ export class BetterHighlightDirective implements OnInit {
 * [Renderer docs](https://angular.io/api/core/Renderer2)
 
 #### @HostListener
-
+* @HostListener -> decorator in Angular is used to listen for events on the host element of the directive
 * Needs to be imported from @angular/core
 * This let's you listen to events from the Element
 * Convenient way of listening to events, can be used with custom events
+
 ```
 @HostListener('mouseenter') mouseover(eventData: Event) {
     this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'orange');
